@@ -20,4 +20,7 @@ import PackageDescription
 
 let package = Package(
     name: "swift-nio-nghttp2-support",
-    pkgConfig: "nghttp2")
+    pkgConfig: "libnghttp2",
+    providers: [
+        .brew(["nghttp2"]),
+    ])
